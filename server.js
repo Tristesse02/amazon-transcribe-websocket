@@ -13,10 +13,10 @@ import cors from "cors";
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
 
-const app = express();
+const app = express();  
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "http://localhost:3000", methods: ["GET", "POST"] },
+  cors: { origin: "http://localhost:4000", methods: ["GET", "POST"] },
 });
 
 // app.use(express.static(path.join(__dirname)));
